@@ -1,0 +1,27 @@
+
+    <!DOCTYPE html>
+
+
+
+<html>
+<header>
+</header>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <canvas id="Trial" width=1330 height=1330 position=center solid="#ffda33" ;>
+        Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+        var TrialCircle = document.getElementById("Trial");
+        var TC = TrialCircle.getContext("2d");
+        TC.beginPath();
+        TC.arc(200, 200, 100, 0, 2 * Math.PI);
+        TC.fillStyle = 'yellow';
+        TC.linewidth = 15;
+        TC.strokeStyle = 'black';
+        TC.stroke();
+    </script>
+
+</body>
+
+</html>

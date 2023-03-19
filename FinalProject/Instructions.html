@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!--HI THIS IS PAGE 3 THE INSTRUCTIONS PAGE-->
+
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    </script>
+</header>
+
+<body>
+    <div class="container">
+        <div id="dark"></div>
+        <div id="headerwrap">
+            <div id="title">
+                <h3><b>Instructions</b></h3>
+            </div>
+            <div id="InstructionsBrief">
+                <p id="user-name">
+                <p>some instructions here blah blah (i should not be seeing this cuz this shld be replaced) </p>
+                <script>
+                    const printUN = localStorage.getItem('user-name');
+                    document.getElementById('user-name').textContent = printUN;
+                    document.getElementById('InstructionsBrief').innerHTML = 'Hello ' + printUN + '!! Welcome to GENSHIN ALLSTARS!'
+                </script>
+                <p>This is a fun rhythm game using beautiful genshin
+                <p> music! Genshin music is created with the inspiration from
+                <p>various cultural music and includes special cultural elements!</p>
+                Let's hop into a world with culturally diverse
+                <p> music! Press the button below to proceed ;)
+                    <br><br>
+                <form id="GoToTrial" action="Trial.html">
+                    <button type="submit" id="GoTrialButton">Let's go!</button>
+                </form>
+                </p>
+            </div>
+
+</body>
+
+</html>

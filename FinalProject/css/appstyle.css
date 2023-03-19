@@ -1,0 +1,234 @@
+/** general aesthetics **/
+
+ #headerwrap {
+  background: #E8E8E8 url(https://pbs.twimg.com/media/E_n-cNCVcAUdE4u?format=jpg&name=large) no-repeat center top;
+  margin-top: 1px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 830px;
+  height: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+.content {
+  display: inline-block;
+  position: relative;
+}
+
+.body{
+  background: #E8E8E8 url(https://pbs.twimg.com/media/E_n-cNCVcAUdE4u?format=jpg&name=large) no-repeat center top;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 750px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}; **/
+
+/** styling is from https://manhattan-vibes.tumblr.com/ **/
+
+/** page 1: starting page **/
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 1444px;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+
+#PauseMusic {
+  background-color: #ffda33;
+  transform: translate(50%, 50%);
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: solid black 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 30px 30px;
+}
+
+#PauseMusic:hover {
+  background-color: #ffc233;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white
+}
+
+#StartButton {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(50%, 50%);
+  background-color: #ffda33;
+  color: black;
+  font-size: 28px;
+  padding: 12px 24px;
+  border: solid black 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+}
+
+#StartButton:hover {
+  background-color: #ffc233;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white
+}
+
+#GameTitle {
+  transform: translate(50%, 50%);
+  color: white;
+  font-size: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 50px 50px;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  text-shadow: 3px 3px black;
+}
+  
+/** page 2: name input page **/
+
+#insertName {
+  bottom: 30%;
+  left: 40%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 28px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: 50px 50px;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#OK {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#OK:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+/** page 3: instructions page **/
+
+#InstructionsBrief {
+  bottom: 20%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#title {
+  bottom: 65%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 10px 196px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#user-name {
+ color:orange;
+ font-weight: bold;
+ text-decoration-line: underline;
+}
+
+#GoTrialButton {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#GoTrialButton:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+/** page 4: trial page **/
+#canvas {
+position: relative;
+bottom: 50%;
+left: 50%;
+size: 50%;
+width: 400px;
+height: 400px;
+}
+

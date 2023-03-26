@@ -232,3 +232,98 @@ width: 400px;
 height: 400px;
 }
 
+/** page 4 trial demo **/
+#YouAreReady {
+  bottom: 20%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+}
+
+#stay {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#stay:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+#PGFbutton {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#PGFbutton:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+/** page 8 score summary **/
+#songDisplay {
+  bottom: 20%;
+  left: 10%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  size: 10%;
+}
+
+#Scores {
+  bottom: 20%;
+  left: 70%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+}

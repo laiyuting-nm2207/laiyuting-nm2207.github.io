@@ -1,26 +1,28 @@
+<!DOCTYPE html>
 
-    <!DOCTYPE html>
-
-
+<!--HI THIS IS PAGE 4 THE Trial page -->
 
 <html>
 <header>
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    <script defer type="text/javascript" src="appscripts/demo.js">
+    </script>
 </header>
 
 <body>
     <link rel="stylesheet" type="text/css" href="css/appstyle.css">
     <canvas id="Trial" width=1330 height=1330 position=center solid="#ffda33" ;>
-        Your browser does not support the HTML5 canvas tag.</canvas>
-    <script>
-        var TrialCircle = document.getElementById("Trial");
-        var TC = TrialCircle.getContext("2d");
-        TC.beginPath();
-        TC.arc(200, 200, 100, 0, 2 * Math.PI);
-        TC.fillStyle = 'yellow';
-        TC.linewidth = 15;
-        TC.strokeStyle = 'black';
-        TC.stroke();
-    </script>
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <div id="YouAreReady">
+        <p>Congrats, you have completed the demo! <br>
+            Are you ready for the real game?</p>
+        <!--<form id="stay" action="Trial.html">
+            <button type="submit" id="stay">Re-try demo</button></form> to be fixed...-->
+        <form id="PGF" action="PreGameFlash.html">
+            <button type="submit" id="PGFbutton">Let's go!</button></form>
+    </div>
 
 </body>
 

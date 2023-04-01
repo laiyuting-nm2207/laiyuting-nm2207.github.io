@@ -284,6 +284,24 @@ height: 400px;
   color: white;
 }
 
+/** page 5 pre-game flash **/
+#PGF {
+  transform: translate(50%, 50%);
+  color: white;
+  font-size: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 50px 50px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  text-shadow: 3px 3px black;
+  background-color: rgba(0,0,0,0);
+  text-align: left ;
+}
+
 /** page 8 score summary **/
 #songDisplay {
   bottom: 20%;
@@ -326,4 +344,24 @@ height: 400px;
   position: center;
   position: absolute;
   text-align: center;
+}
+
+/** page 8 score summary **/
+#SSbutton {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+  bottom: 10%;
+  left: 70%;
+}
+
+#SSbutton:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+  bottom: 10%;
+  left: 70%;
 }

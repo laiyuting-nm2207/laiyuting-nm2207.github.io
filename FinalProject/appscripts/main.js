@@ -28,43 +28,14 @@ insertName.addEventListener("submit", function (e) {
 // ^ refer to  demo.js
 
 // page 5 pre-game flash
-
-setTimeout(function (flash3) {
-    document.getElementById("3").style.visbility = 'visible';
-    document.getElementById("2").style.visbility = 'hidden';
-    document.getElementById("1").style.visbility = 'hidden';
-    document.getElementById("startRealGame").style.visbility = 'hidden';
-}, 1000);
-
-setTimeout(function (flash2) {
-    document.getElementById("3").style.visbility = 'hidden';
-    document.getElementById("2").style.visbility = 'visible';
-    document.getElementById("1").style.visbility = 'hidden';
-    document.getElementById("startRealGame").style.visbility = 'hidden';
-}, 1000);
-
-setTimeout(function (flash1) {
-    document.getElementById("3").style.visbility = 'hidden';
-    document.getElementById("2").style.visbility = 'hidden';
-    document.getElementById("1").style.visbility = 'visible';
-    document.getElementById("startRealGame").style.visbility = 'hidden';
-}, 1000);
-
-setTimeout(function (flashstart) {
-    document.getElementById("3").style.visbility = 'hidden';
-    document.getElementById("2").style.visbility = 'hidden';
-    document.getElementById("1").style.visbility = 'hidden';
-    document.getElementById("startRealGame").style.visbility = 'visible';
-}, 1000);
-
-// ^ the flash doesnt work T^T
+// refer to pregameflash.js
 
 
 // page 6 actual game
 document.getElementById("timesUp").style.visibility='hidden';
 let points = 0
 clicked = document.addEventListener("click", function (score) {
-    points = 0++;
+    points = i++;
 })
 
 const lettertoajax = document.querySelector("audio");

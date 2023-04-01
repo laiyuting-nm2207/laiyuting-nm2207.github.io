@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <audio src="resources/LetterFromAjax.mp3" id="gameSong" hidden="true" autoplay="autoplay" id="music">
+    </audio>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <style id="compiled-css" type="text/css">
+        canvas {
+            border: 1px solid red;
+        }
+    </style>
+    <script type="text/javascript">
+        $(window).load(function () {/*from  w w  w  . j a  va2  s. c  om*/
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var cw = canvas.width;
+            var ch = canvas.height;
+
+            var circles = [];
+            for (var i = 0; i < 3; i++) {
+                newCircle();
+            }
+            drawAll();
+
+            var continueAnimating = true;
+            var lastTime = performance.now();
+            requestAnimationFrame(animate);
+            function newCircle() {
+                var r = 10 + Math.random() * 15;
+                var x = Math.random() * (cw - 2 * r) + r;
+                var y = Math.random() * (ch - 2 * r) + r;
+                while (true) {
+                    var hit = 0;
+                    for (var i = 0; i < circles.length; i++) {
+                        var circle = circles[i];
+                        var dx = x - circle.x;
+                        var dy = y - circle.y;
+                        var rr = r + circle.radius;
+                        if (dx * dx + dy * dy < rr * rr) {
+                            hit++;
+                        }
+                    }
+                    if (hit == 0) {
+                        break;
+                    }
+                    var x = Math.random() * (cw - 2 * r) + r;
+                    var y = Math.random() * (ch - 2 * r) + r;
+                }
+
+                circles.push({
+                    x: x,
+                    y: y,
+                    radius: r,
+                    color: randomColor(),
+                    countdown: 500 + Math.random() * 1000
+                });
+            }
+
+            function animate(time) {
+                if (continueAnimating) {
+                    requestAnimationFrame(animate);
+                }
+                var elapsed = time - lastTime;
+                lastTime = time;
+                var i = circles.length;
+                while (--i >= 0) {
+                    var circle = circles[i];
+                    circle.countdown -= elapsed;
+                    if (circle.countdown < 0) {
+                        circles.splice(i, 1);
+                        newCircle();
+                    }
+                }
+                // draw circles
+                drawAll();
+            }
+            function drawAll() {
+                ctx.clearRect(0, 0, cw, ch);
+                for (var i = 0; i < circles.length; i++) {
+                    var circle = circles[i];
+                    ctx.beginPath();
+                    ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
+                    ctx.closePath();
+                    ctx.fillStyle = circle.color;
+                    ctx.fill();
+                }
+            }
+            function randomColor() {
+                return ('#' + Math.floor(Math.random() * 16777215).toString(16));
+            }
+            $("#stop").click(function () {
+                continueAnimating = false;
+            }
+            );
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <h4>Random disappearing circles.</h4>
+    <button id="stop">Stop</button>
+    <br>
+    <canvas id="canvas" width="1420" height="720"></canvas>
+    <div id="headerwrap">
+    <p id="Timesup"></p>
+    <script>
+        document.getElementById("Timesup").innerText = ""
+        const aud = document.getElementById("gameSong");
+        aud.onended = function () {
+            setTimeout(function () {
+            document.getElementById("PGF").innerText = "Time's up";
+        }, 3000);
+        // timeout doesnt work yet....
+        window.location.href = "scoreSummary.html"
+        };
+    </script>
+</body>
+
+</html>

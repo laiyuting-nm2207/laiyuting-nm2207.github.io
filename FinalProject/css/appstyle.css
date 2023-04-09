@@ -223,16 +223,109 @@
 }
 
 /** page 4: trial page **/
-#canvas {
+/**#canvas {
 position: relative;
 bottom: 50%;
 left: 50%;
 size: 50%;
 width: 400px;
 height: 400px;
+}**/
+
+#beats1 img {
+  width: 200px;
+  animation: beats1 3.5s linear infinite;
 }
 
-/** page 4 trial demo **/
+#beats1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px;
+}
+
+@keyframes beats1{
+  0%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+#beats1 img:nth-child(1){
+  animation-delay: 2s;
+}
+#beats1 img:nth-child(2){
+  animation-delay: 1s;
+}
+#beats1 img:nth-child(3){
+  animation-delay: 3s;
+}
+#beats1 img:nth-child(4){
+  animation-delay: 3.5s;
+}
+#beats1 img:nth-child(5){
+  animation-delay: 2.5s;
+}
+
+#beats2 img {
+  width: 200px;
+  animation: beats2 3.5s linear infinite;
+}
+
+#beats2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px;
+}
+
+@keyframes beats2{
+  0%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+#beats2 img:nth-child(1){
+  animation-delay: 5s;
+}
+#beats2 img:nth-child(2){
+  animation-delay: 0.5s;
+}
+#beats2 img:nth-child(3){
+  animation-delay: 1s;
+}
+#beats2 img:nth-child(4){
+  animation-delay: 2s;
+}
+#beats2 img:nth-child(5){
+  animation-delay: 0.8s;
+}
+
 #YouAreReady {
   bottom: 20%;
   left: 33%;
@@ -301,6 +394,23 @@ height: 400px;
   background-color: rgba(0,0,0,0);
   text-align: left ;
 }
+
+/** page 6 actual game **/
+#Timesup {
+  transform: translate(50%, 50%);
+  color: white;
+  font-size: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 50px 50px;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  text-shadow: 3px 3px black;
+}
+  
 
 /** page 8 score summary **/
 #songDisplay {

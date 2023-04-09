@@ -8,7 +8,7 @@
     <!--<script defer type="text/javascript" src="appscripts/main.js" >
         </script>-->
     <link rel="shortcut icon" href="resources/favicon.png" />
-    <audio src="resources/Opening.mp3" hidden="true" autoplay="autoplay" id="music">
+    <audio src="resources/Opening.mp3" id="opening" hidden="true" autoplay="autoplay" id="music">
     </audio>
 </header>
 
@@ -17,6 +17,12 @@
         <div id="headerwrap">
             <form action="insertName.html"><button type="submit" id="StartButton">START</button></form>
             <a button class="btn" id="PauseMusic">Pause Music</button>
+                <script>
+                    var aud = document.getElementById("opening");
+                    document.addEventListener("click", pauseBGM => {
+                    aud.onpause;
+                    });
+                </script>
                 <a button class="btn" id="GameTitle">Genshin <br> AllStars!</button>
 </body>
 

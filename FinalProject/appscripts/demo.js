@@ -2,7 +2,7 @@ var TrialCircle = document.getElementById("Trial");
 var TC = TrialCircle.getContext("2d");
 TC.beginPath();
 TC.arc(200, 200, 100, 0, 2 * Math.PI);
-TC.fillStyle = 'yellow';
+TC.fillStyle = 'grey';
 TC.linewidth = 15;
 TC.strokeStyle = 'black';
 TC.stroke();

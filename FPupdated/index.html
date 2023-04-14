@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!--HI THIS IS PAGE 1 THE STARTING PAGE-->
+
+<html>
+<header><!--not sure if i should put js reference here or in the body-->
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script defer type="text/javascript" src="appscripts/main.js" >
+        </script>
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    <!--<audio src="resources/Opening.mp3" id="opening" hidden="true" autoplay="autoplay" id="music">-->
+    </audio>
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+	</style>
+</header>
+<body>
+    <div class="container">
+        <div id="headerwrap">
+            <video autoplay muted id="intro">
+                <source src="resources/zhongchiintro.mp4" type="video/mp4"></video>
+            <form action="insertName.html"><button type="submit" id="StartButton">START</button></form>
+            <a button class="btn" id="MusicButton">Play Music</a>
+            <!--<a button class="btn" id="GameTitle">Genshin <br> AllStars!</button> note: remove css later--> 
+        </div>
+    </div>
+</body>
+
+</html>

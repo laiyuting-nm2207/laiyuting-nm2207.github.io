@@ -1,0 +1,553 @@
+/** general aesthetics **/
+
+ /**#headerwrap {
+  background: #E8E8E8 url(https://pbs.twimg.com/media/E_n-cNCVcAUdE4u?format=jpg&name=large) no-repeat center top;
+  background: url(resouces/zhongchiintro.mov);
+  margin-top: 1px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 830px;
+  height: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} **/
+
+/**#intro {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}**/
+
+.content {
+  display: inline-block;
+  position: relative;
+}
+
+.body{
+  background: #E8E8E8 url(https://pbs.twimg.com/media/E_n-cNCVcAUdE4u?format=jpg&name=large) no-repeat center top;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 750px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}; **/
+
+/** styling is from https://manhattan-vibes.tumblr.com/ **/
+
+/** page 1: starting page **/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container img {
+  width: 1444px;
+  height: auto;
+}
+
+#MusicButton {
+  background-color: #ffda33;
+  transform: translate(50%, 50%);
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: solid black 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 30px 30px;
+}
+
+#MusicButton:hover {
+  background-color: #ffc233;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white
+}
+
+#StartButton {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(50%, 50%);
+  background-color: #ffda33;
+  color: black;
+  font-size: 28px;
+  padding: 12px 24px;
+  border: solid black 3px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Tahoma', sans-serif;
+}
+
+#StartButton:hover {
+  background-color: #ffc233;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white
+}
+
+/**#GameTitle {
+  transform: translate(50%, 50%);
+  color: white;
+  font-size: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 50px 50px;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  text-shadow: 3px 3px black;
+}**/
+  
+/** page 2: name input page **/
+
+#insertName {
+  bottom: 30%;
+  left: 40%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 28px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: 50px 50px;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#OK {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#OK:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+/** page 3: instructions page **/
+
+#InstructionsBrief {
+  bottom: 20%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#title1 {
+  bottom: 65%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 10px 196px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#title2 {
+  bottom: 56%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 10px 204px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#user-name {
+ color:orange;
+ font-weight: bold;
+ text-decoration-line: underline;
+}
+
+#GoTrialButton {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#GoTrialButton:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+/** page 5: trial page **/
+/**#canvas {
+position: relative;
+bottom: 50%;
+left: 50%;
+size: 50%;
+width: 400px;
+height: 400px;
+}**/
+
+#beats1 img {
+  width: 200px;
+  animation: beats1 4s linear infinite;
+}
+
+#beats1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -100px;
+}
+
+@keyframes beats1{
+  0%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  130%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+#beats1 img:nth-child(1){
+  animation-delay: 2s;
+}
+#beats1 img:nth-child(2){
+  animation-delay: 1s;
+}
+#beats1 img:nth-child(3){
+  animation-delay: 3s;
+}
+#beats1 img:nth-child(4){
+  animation-delay: 7s;
+}
+#beats1 img:nth-child(5){
+  animation-delay: 2.5s;
+}
+
+/** beats2 for more variety in positioning so the game is not repetitive**/
+#beats2 img {
+  width: 200px;
+  animation: beats2 2s linear infinite;
+}
+
+#beats2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -100px;
+}
+
+@keyframes beats2{
+  0%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  130%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+#beats2 img:nth-child(1){
+  animation-delay: 13s;
+}
+#beats2 img:nth-child(2){
+  animation-delay: 26;
+}
+#beats2 img:nth-child(3){
+  animation-delay: 17s;
+}
+#beats2 img:nth-child(4){
+  animation-delay: 45s;
+}
+#beats2 img:nth-child(5){
+  animation-delay: 24s;
+}
+
+#beatsStationary img {
+  width: 200px;
+}
+
+#beatsStationary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0px;
+}
+
+.beat {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  position: absolute;
+  display: none;
+}
+
+/**animation help from: https://www.youtube.com/watch?v=CZTCciHE72I **/
+
+#YouAreReady {
+  bottom: 20%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+}
+
+#stay {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#stay:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+#PGFbutton {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+#PGFbutton:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+}
+
+#TrialCount {
+  bottom: 50%;
+  left: 70%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+}
+
+/** page 5 pre-game flash **/
+#PGF {
+  color: white;
+  font-size: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px black;
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+}
+
+/** page 6 actual game **/
+#Timesup {
+  transform: translate(50%, 50%);
+  color: white;
+  font-size: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Tahoma", sans-serif;
+  position: 50px 50px;
+  position: absolute;
+  top: 15%;
+  left: 23%;
+  text-shadow: 3px 3px black;
+}
+  
+
+/** page 8 score summary **/
+#songDisplay {
+  bottom: 20%;
+  left: 10%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  size: 10%;
+}
+
+#Scores {
+  bottom: 20%;
+  left: 70%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+}
+
+/** page 8 score summary **/
+#SSbutton {
+  font-family: "Tahoma", sans-serif;
+  font-size: 28px;
+  border: 0px;
+  background-color: #ffc233;
+  border: 2px solid black;
+  border-radius: 6px;
+  bottom: 10%;
+  left: 70%;
+}
+
+#SSbutton:hover {
+  background-color:#ffda33;
+  box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
+  color: white;
+  bottom: 10%;
+  left: 70%;
+}

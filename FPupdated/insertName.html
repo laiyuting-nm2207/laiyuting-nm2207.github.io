@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--HI THIS IS PAGE 2 THE PLAYER NAME FORM-->
+
+<html>
+
+<header>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+	</style>
+</header>
+
+<body>
+    <div class="container">
+        <div id="dark"></div>
+        <div id="headerwrap">
+            <video autoplay muted id="intro">
+                <source src="resources/darkenscreen.mp4" type="video/mp4"></video>
+            <div id="div1">
+                <form id="insertName" action="Instructions.html">
+                    <label>Hi! What's your name? <br><br> <input type="text" id="username"></label>
+                    <br /><br>
+                    <button type="submit" id="OK">OK</button>
+                </form>
+            </div>
+
+</body>
+<bottom>
+    <script defer type="text/javascript" src="appscripts/main.js">
+     </script>
+</bottom>
+</div>
+
+</html>

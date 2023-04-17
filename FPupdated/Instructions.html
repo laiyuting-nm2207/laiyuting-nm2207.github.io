@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!--HI THIS IS PAGE 3 THE INSTRUCTIONS PAGE-->
+
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</header>
+
+<body>
+    <div class="container">
+        <video autoplay muted id="intro">
+            <source src="resources/darkenscreen.mp4" type="video/mp4">
+        </video>
+        <div id="title1">
+            <h3><b>Instructions</b></h3>
+        </div>
+        <div id="InstructionsBrief">
+            <p id="user-name">
+            <p>some instructions here blah blah (i should not be seeing this cuz this shld be replaced) </p>
+            <script>
+                const printUN = localStorage.getItem('user-name');
+                document.getElementById('user-name').textContent = printUN;
+                document.getElementById('InstructionsBrief').innerHTML = 'Hello ' + printUN + '!! Welcome to GENSHIN ALLSTARS!'
+            </script>
+            <p>This is a fun rhythm game using beautiful genshin
+            <p> music! Genshin music is created with the inspiration from
+            <p>various cultural music and includes special cultural elements!</p>
+            Let's hop into a world with culturally diverse
+            <p> music! Press the button below to proceed ;)
+                <br><br>
+            <form id="GoToTrial" action="DemoInstructions.html">
+                <button type="submit" id="GoTrialButton">Next</button>
+            </form>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--HI THIS IS PAGE 6 AN EXTRA PG WHERE I LAST MIN DECIDED TO INCLUDE MORE SONG OPTIONS-->
+
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    <audio src="resources/Opening.mp3" hidden="true" autoplay="autoplay" id="music">
+    </audio>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</header>
+
+<body>
+    <div class="container">
+        <div id="songDisplay">
+            <table>
+                <tr>
+                    <td id="song1">
+                        <a href="PreGameFlash.html">
+                            <img src="resources/TheStellarMoments.png" style="width:300px;height:300px;">
+                            <br><br><b>Letter from Ajax</b></br>
+                        </a>
+                    </td>
+                    <td id="song2">
+                        <a href="PreGameFlash2.html">
+                            <img src="resources/TheStellarMoments.png" style="width:300px;height:300px;">
+                            <br><br><b>Rex Incognito</b></br>
+                        </a>
+                    </td>
+                    <td id="song3">
+                        <a href="PreGameFlash3.html">
+                            <img src="resources/ForestofJnanaandVidya.png" style="width:300px;height:300px;">
+                            <br><br><b>Hustle and Bustle of Osmos</b></br>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <form id="songSelectionMenu" action="Trial.html">
+                <button type="submit" id="SSbutton">Re-try Demo</button>
+            </form>
+        </div>
+        <video autoplay muted id="intro">
+            <source src="resources/darkenscreen.mp4" type="video/mp4">
+    </div>
+
+</body>
+
+</html>

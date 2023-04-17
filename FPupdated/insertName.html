@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- HI THIS IS PAGE 2 THE PLAYER NAME FORM -->
+<html>
+<header>
+  <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+  <link rel="shortcut icon" href="resources/favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</header>
+
+<body>
+  <div class="container">
+    <video autoplay muted id="intro">
+      <source src="resources/darkenscreen.mp4" type="video/mp4">
+    </video>
+    <div id="div1">
+      <form id="insertName" action="Instructions.html">
+        <label>Hi! What's your name? <br><br>
+          <input type="text" name="username">
+        </label>
+        <br /><br>
+        <button type="submit" id="OK">OK</button>
+      </form>
+    </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const insertName = document.getElementById('insertName');
+      insertName.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const usernameValue = insertName.username.value;
+        localStorage.setItem('user-name', usernameValue);
+        window.location.href = "Instructions.html";
+      });
+    });
+  </script>
+</body>
+
+</html>

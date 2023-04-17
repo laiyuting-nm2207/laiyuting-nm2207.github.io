@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--HI THIS IS THE ACTUAL GAME PAGE -->
+<html>
+<header>
+    <link rel="shortcut icon" href="resources/favicon.png" />
+    <script defer type="text/javascript" src="appscripts/game.js"></script>
+    <!--<audio src="resources/LetterFromAjax.mp3" id="gameSong" muted hidden="true" autoplay="autoplay"
+        playsinline="playsinline" loop="false"></audio>-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</header>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <p id="PGF"></p>
+    <p id="Timesup"></p>
+    <script>
+        document.getElementById("Timesup").innerText = "";
+        const aud = document.getElementById("gameSong");
+        aud.onended = function () {
+            document.getElementById("Timesup").innerText = "Time's up";
+            setTimeout(function () {
+                window.location.href = "scoreSummary.html";
+            }, 3000);
+        };
+    </script>
+    <div id="beatsStationary">
+        <img src="resources/ajax.png" onclick="changeImage()" id="stationary" id="BS1" class="stationary">
+        <img src="resources/ajax.png" onclick="changeImage()" id="stationary" id="BS2" class="stationary">
+        <img src="resources/ajax.png" onclick="changeImage()" id="stationary" id="BS3" class="stationary">
+        <img src="resources/ajax.png" onclick="changeImage()" id="stationary" id="BS4" class="stationary">
+        <img src="resources/ajax.png" onclick="changeImage()" id="stationary" id="BS5" class="stationary">
+    </div>
+    <div id="beats1">
+        <img src="resources/blankbeat.png" id="beat1">
+        <img src="resources/blankbeat.png" id="beat2">
+        <img src="resources/blankbeat.png" id="beat3">
+        <img src="resources/blankbeat.png" id="beat4">
+        <img src="resources/blankbeat.png" id="beat5">
+    </div>
+    <div id="beats2">
+        <img src="resources/blankbeat.png" id="beat6">
+        <img src="resources/blankbeat.png" id="beat7">
+        <img src="resources/blankbeat.png" id="beat8">
+        <img src="resources/blankbeat.png" id="beat9">
+        <img src="resources/blankbeat.png" id="beat10">
+    </div>
+
+    <video autoplay muted id="maingameBG">
+        <source src="resources/maingamebg.mp4" type="video/mp4">
+    </video>
+
+</body>
+
+</html>

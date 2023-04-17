@@ -1,13 +1,20 @@
 
-
 // click to pause music for starting screen
-const audio = document.getElementById("music");
+const mainBGM = new Audio ("resources/Opening.mp3");
+let MusicStatus = "off"
+MusicButton.addEventListener("click", function (ev) {
+  if (MusicStatus === "off"){
+          MusicStatus = "on";
+          document.getElementById("MusicButton").innerHTML = "Pause Music";
+          mainBGM.play();
+          mainBGM.loop = "true";
+  } else {
+          MusicStatus = "on";
+          document.getElementById("MusicButton").innerHTML  = "Play Music";
+          mainBGM.pause();
+  };
+});
 
-// PauseMusic.addEventListener("click", function (ev) {
-// document.getElementById("music") = false;
-
-// });
-// ^ doesnt work yet... still dk how
 
 // click to unpause music
 

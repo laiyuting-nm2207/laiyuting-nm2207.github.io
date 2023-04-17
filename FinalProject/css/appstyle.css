@@ -61,7 +61,7 @@
 
 /* Style the button and place it in the middle of the container/image */
 
-#PauseMusic {
+#MusicButton {
   background-color: #ffda33;
   transform: translate(50%, 50%);
   color: black;
@@ -74,7 +74,7 @@
   position: 30px 30px;
 }
 
-#PauseMusic:hover {
+#MusicButton:hover {
   background-color: #ffc233;
   box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
   color: white
@@ -179,7 +179,7 @@
   box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
 }
 
-#title {
+#title1 {
   bottom: 65%;
   left: 33%;
   background-color: #ffda33;
@@ -187,6 +187,28 @@
   color: black;
   font-size: 18px;
   padding: 10px 196px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 200px 200px 0 rgba(0,0,0,0.50);
+}
+
+#title2 {
+  bottom: 56%;
+  left: 33%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 10px 204px;
   border: solid black 3px;
   border-radius: 6px;
   outline: none;
@@ -375,6 +397,27 @@ height: 400px;
   background-color:#ffda33;
   box-shadow: 0 17px 29px 0 rgba(0,0,0,0.50);
   color: white;
+}
+
+#TrialCount {
+  bottom: 50%;
+  left: 70%;
+  background-color: #ffda33;
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  padding: 30px 20px;
+  border: solid black 3px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: center;
+  position: absolute;
+  text-align: center;
 }
 
 /** page 5 pre-game flash **/

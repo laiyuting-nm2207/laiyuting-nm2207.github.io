@@ -16,18 +16,31 @@
     </canvas>-->
     <div id="headerwrap">
     <div id="beats1">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
     </div>
     <div id="beats2">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
-        <img src="resources/beats.png">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+        <img src="resources/beats.png" id="beat">
+    </div>
+
+    <div id="TrialCount">
+       <script>
+        let beat = document.querySelector("#beat");
+        let demoScore = 0
+        beat.addEventListener('click', (event) => {
+           demoScore = demoScore + 1;
+           document.getElementById("TrialCount").innerHTML = "Score = " + demoScore;
+        });
+        beat.src = "resources/beats.png";
+       </script> 
+       score: x
     </div>
 
     <div id="YouAreReady">
